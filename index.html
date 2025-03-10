@@ -9,41 +9,107 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
-    !-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+   
     <header>
-        <div class="logo">
-
-        </div>
-        <nav>
-            <a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>
+        <nav class="topnav" id="myTopnav">
+          <div class="nav-links">
+            <a href="#proyectos" class="portfolio-link">Projects</a>
+            <a href="#acerca-de-mi">Acerca de</a>
+            <a href="#contacto">Get started</a>
+          </div>
+          <a href="javascript:void(0);" class="icon fa fa-bars" onclick="myFunction()"></a>
         </nav>
-    </header>
-    
+      </header>
     <section class="home">
         <h1>Rodrigo Claros</h1>
-        <p>Hola! Soy un desarrollador web. Puedo ayudarte a construir un producto, una característica o un sitio web. ¡Mira mi trabajo!</p>
-        <a href="#contact" class="btn primary">Empezar colaboración</a>
+        <p>¡Hola! ¡Soy un desarrollador de software! Puedo ayudarle a crear un producto, una función o un sitio web. Echa un vistazo a mi trabajo.
+            <br> <br>Si te gusta lo que ves y tienes un proyecto que necesitas.</p>
+            <a href="#contact" class="btn primary">Empezar colaboración</a>
     </section>
     
     <main>
         <section class="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <img src="https://via.placeholder.com/300" alt="Proyecto 1">
+            <h1>Projects</h1>
+            <div class="project-card">
+                <img src="imag/Rectangle1.png" alt="Project Image">
                 <div class="project-info">
-                    <h3>El nombre del Proyecto va aquí</h3>
-                    <p>HTML/CSS - JavaScript</p>
-                    <a href="#" class="btn secondary">See this project</a>
+                    <h2>Project name goes here</h2>
+                    <div class="tags">
+                        <span>HTML/CSS</span>
+                        <span>Ruby on Rails</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <button>See this project →</button>
+                    <a href="#" class="project-button">
                 </div>
             </div>
-        </section>
+            <div class="project-card">
+                <img src="imag/Rectangle2.png" alt="Project Image">
+                <div class="project-info">
+                    <h2>Project name goes here</h2>
+                    <div class="tags">
+                        <span>HTML/CSS</span>
+                        <span>Ruby on Rails</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <button>See this project →</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="imag/Rectangle3.png" alt="Project Image">
+                <div class="project-info">
+                    <h2>Project name goes here</h2>
+                    <div class="tags">
+                        <span>HTML/CSS</span>
+                        <span>Ruby on Rails</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <button>See this project →</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="imag/Rectangle4.png" alt="Project Image">
+                <div class="project-info">
+                    <h2>Project name goes here</h2>
+                    <div class="tags">
+                        <span>HTML/CSS</span>
+                        <span>Ruby on Rails</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <button>See this project →</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="imag/Rectangle5.png" alt="Project Image">
+                <div class="project-info">
+                    <h2>Project name goes here</h2>
+                    <div class="tags">
+                        <span>HTML/CSS</span>
+                        <span>Ruby on Rails</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <button>See this project →</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="imag/Rectangle6.png" alt="Project Image">
+                <div class="project-info">
+                    <h2>Project name goes here</h2>
+                    <div class="tags">
+                        <span>HTML/CSS</span>
+                        <span>Ruby on Rails</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <button>See this project →</button>
+                </div>
+            </div>
         
         <section class="about">
             <h2>Acerca de</h2>
-            <p>Puedo ayudarte a construir un producto, una característica o un sitio web. Echa un vistazo a mi trabajo y experiencia.</p>
+            <p>Puedo ayudarte a construir un producto, una característica o un sitio web. Echa un vistazo a mi trabajo y experiencia. <br><br></p>
             <a href="#" class="btn primary">Consigue mi CV</a>
             <div class="skills">
                 <div class="card1">
@@ -103,5 +169,6 @@
             </div>
         </footer>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
