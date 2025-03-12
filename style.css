@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(#970808, 90%, #ffffff3d);
+  background: #ffffff;
   padding: 20px;
   background-image: url(./imag/image_geometry_1.svg);
   background-repeat: no-repeat;
@@ -46,13 +46,14 @@ header nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .topnav .nav-links {
   display: flex;
   width: 100%;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .topnav a {
@@ -282,5 +283,10 @@ footer {
   .card {
       width: 100%;
       max-width: none;
+  }
+}
+@media (min-width: 600px){
+  .home {
+        
   }
 }
