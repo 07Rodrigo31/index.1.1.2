@@ -170,14 +170,20 @@ header nav {
 }
 
 .card {
-  
+  max-width: 30%;
   box-shadow: 0px 4px 6px rgb(255, 255, 255);
-  width: 100%;
   min-width: 250px;
   margin-bottom: 20px;
   font-family: 'Playfair', serif;
   display: flex;
   flex-direction: column;
+  width: 200px;  /* Ajusta según el tamaño que desees */
+  height: 200px; /* Debe ser igual al width para ser un cuadrado */ justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px; /* Opcional para esquinas redondeadas */
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Opcional para dar sombra */
 }
 .card ul{
   list-style:circle;
@@ -345,12 +351,13 @@ footer {
 
   }
   .skills {
-      flex-direction: center;
+      display: flex;
 
   }
-
   .card {
-      width: 100%;
-      max-width: none;
+      max-width: 12rem;
+  }
+  .card4 {
+    display: none;
   }
 }
