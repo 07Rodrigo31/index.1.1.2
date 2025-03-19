@@ -256,7 +256,7 @@ footer {
   padding: 20px;
 }
 
-.social-links a {
+social-links a {
   color: white;
   margin: 0 10px;
   font-size: 20px;
@@ -264,11 +264,17 @@ footer {
 
 /* Menú responsivo */
 @media (max-width: 768px) {
+  header {
+    background: none;
+  }
+
   .topnav a {
       display: none;
   }
   .topnav a.icon {
       display: block;
+      background-color: #f4f4f42c;
+      border-radius: 50%;
   }
   .topnav.responsive {
       position: fixed;
@@ -277,14 +283,22 @@ footer {
       width: 100vw;
       height: 100vh;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: start;
       background-color: #6171ffcc;
       backdrop-filter: blur(4px);
       z-index: 9999;
   }
+
+  .topnav .icon {
+      display: block;
+  }
+
+  .primero {
+    padding-top: 5%;
+  }
   .topnav.responsive .nav-links a {
-      display: Flex;
+      display: flex;
       width: 100%;
       text-align: left;
       padding: 14px 16px;
@@ -292,9 +306,17 @@ footer {
       text-decoration: none;
       font-size: 2rem;
   }
+
+  .topnav .nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+
+  }	
   header {
     flex-direction: row;
-    background-color: #ffffff;
+    background-color: #ffffff00;
   }
   
   .home {
@@ -337,6 +359,13 @@ footer {
       padding: 20px;
   }
 
+  .contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .project {
       flex-direction: column;
       align-items: flex-start;
@@ -348,16 +377,29 @@ footer {
   }
   .about{
       flex-direction: column-reverse;
-
   }
+
   .skills {
       display: flex;
-
+      flex-direction: column;
+  }
+  
+  .about-contenido {
+      padding-block: 10%;
+  }
+  
+  .skills {
+      display: flex;
+      align-content: center;
   }
   .card {
-      max-width: 12rem;
+      width: 100%; 
   }
   .card4 {
     display: none;
+  }
+  li {
+    display: flex;
+    justify-content: left;
   }
 }
